@@ -81,6 +81,7 @@ def main():
             if "." in filename:
                 filename = filename.rsplit('.', 1)
             files_list += filename
+        files_list += dirs
 
     for item in imports:
         try:
@@ -88,7 +89,7 @@ def main():
                 full_import_list.append(distribution_info[item][0])
         except:
             if item in files_list:
-                print(f'"{item}" is a file being imported (probably). [though there is a chance it could be a package]', end="\n\n") 
+                print(f'"{item}" is a file or folder being imported. [probably, though there is a chance it could be a package]', end="\n\n") 
             else:
                 print(f'"{item}" is not installed, but is being imported. make sure you have all your packages installed.', end="\n\n")
     

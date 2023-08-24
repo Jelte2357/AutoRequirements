@@ -1,8 +1,21 @@
-# AutoRequirements
-Gets the all the requirements from a python project (folder)
+# `AutoRequirements`: A Python package for making requirements.txt automatically
 
-Just put the file somewhere and add it to path.
-then run AutoRequirements in the folder of your choice
-a requirements.txt will be generated.
+I saw there was not a singular good way to automatically make a correct requirements.txt that wouldnt fail, so I made it myself, while restricting myself to only use the standard included packages.
 
-This code is extremely horribly written, but I wanted to solve this problem programmatically, and not manually.
+
+
+The code is not that well written, but it is fast enough.
+
+
+
+Run the program in the folder of your program with 
+
+```shell
+AutoRequirements
+```
+
+or
+
+```shell
+AutoReqs
+```
